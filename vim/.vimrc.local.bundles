@@ -1,0 +1,38 @@
+" Vim Rg
+Plug 'jremmen/vim-ripgrep'
+
+" Terraform settings
+Plug 'jvirtanen/vim-hcl'
+Plug 'hashivim/vim-terraform'
+
+" Rooter
+Plug 'airblade/vim-rooter'
+
+" Hardmode
+" Plug 'wikitopian/hardmode'
+
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+"""""""""""""
+" NCM2 Config
+"""""""""""""
+
+" assuming you're using vim-plug: https://github.com/junegunn/vim-plug
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+
+
+
