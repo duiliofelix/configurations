@@ -1,9 +1,13 @@
 " Vim Rg
 Plug 'jremmen/vim-ripgrep'
 
+" Ressurect
+Plug 'tpope/vim-obsession'
+
 " Terraform settings
 Plug 'jvirtanen/vim-hcl'
 Plug 'hashivim/vim-terraform'
+Plug 'juliosueiras/vim-terraform-completion'
 
 " Rooter
 Plug 'airblade/vim-rooter'
@@ -12,27 +16,35 @@ Plug 'airblade/vim-rooter'
 " Plug 'wikitopian/hardmode'
 
 " Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'JamshedVesuna/vim-markdown-preview'
 
-"""""""""""""
-" NCM2 Config
-"""""""""""""
+" Docker
+Plug 'skanehira/docker.vim'
+Plug 'skanehira/docker-compose.vim'
 
-" assuming you're using vim-plug: https://github.com/junegunn/vim-plug
-Plug 'ncm2/ncm2'
+" Merge tool
+Plug 'samoshkin/vim-mergetool'
+
+" Saltstack
+Plug 'saltstack/salt-vim'
+
+" Syntactic
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+" Plug 'moll/vim-node'
+Plug 'pangloss/vim-javascript'
+Plug 'stephpy/vim-yaml'
+Plug 'elixir-editors/vim-elixir'
+
+" Deoplete
+Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
-" enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
+" Jenkinsfile
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
-" IMPORTANT: :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect
-
-" NOTE: you need to install completion sources to get completions. Check
-" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-
-
-
+" Js
+Plug 'evanleck/vim-svelte'
+Plug 'pangloss/vim-javascript'
+Plug 'HerringtonDarkholme/yats.vim'
